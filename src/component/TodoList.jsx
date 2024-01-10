@@ -19,7 +19,7 @@ export default function TodoList(){
                 <p>error</p>
             ) : (
                 <ul className="list-group">
-                    {todos.map((todo)=>(
+                    {todos?.map((todo)=>(
                         <TodoItem key={todo.id} {...todo} />
                     ))}
                 </ul>
